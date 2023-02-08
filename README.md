@@ -28,6 +28,13 @@ Elasticsearch snapshot 备份 与 BOS 内部上传文件逻辑不适配，在 El
 
 ## 安装 elasticsearch-repository-bos 插件
 
+es 7.6.2 版本，可以直接下载我构建好的 [插件](https://github.com/mess-around/elasticsearch-repository-bos/releases/tag/7.6.2) 或镜像:
+```
+docker pull fakeyanss/elasticsearch-with-repo-bos:7.6.2
+```
+
+构建时依赖7.6.2版本，如果需要其他非兼容版本使用，可以按照以下说明自行编译构建。
+
 先编译插件，再安装到 es 集群。
 
 ### 手动安装
